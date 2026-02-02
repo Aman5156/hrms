@@ -1,0 +1,40 @@
+/* Reset */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Layout */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px; /* fixed width */
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  padding: 20px;
+}
+
+/* Sidebar links */
+.sidebar .nav-link {
+  color: #333;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.sidebar .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Main content */
+.content {
+  flex: 1; /* takes remaining width */
+  background-color: #f5f6fa;
+  padding: 24px;
+  overflow-y: auto;
+}
